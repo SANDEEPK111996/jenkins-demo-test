@@ -35,7 +35,7 @@ formatter.match({
   "location": "Demo.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 88358700,
+  "duration": 102441100,
   "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertTrue(Assert.java:42)\r\n\tat org.testng.Assert.assertTrue(Assert.java:52)\r\n\tat Step.Demo.user_is_on_login_page(Demo.java:29)\r\n\tat ✽.Given Running for Demo(Test.feature:8)\r\n",
   "status": "failed"
 });
