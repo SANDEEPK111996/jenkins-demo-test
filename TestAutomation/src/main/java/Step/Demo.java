@@ -26,6 +26,6 @@ public class Demo extends TestEngine {
 
 	@Given("^Testing demo Testcase$")
 	public void user_is_on_login_page() throws Throwable {
-	    assertTrue(isPalindrome("madam"));
+	    assertTrue(isPalindrome("madam1"));
 	}
 }
