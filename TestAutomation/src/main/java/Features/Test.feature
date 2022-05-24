@@ -5,4 +5,4 @@ Feature: Title of your feature
 
   @tag1
   Scenario: Title of your scenario
-    Given Running for Demo
+    Given Testing demo Testcase
