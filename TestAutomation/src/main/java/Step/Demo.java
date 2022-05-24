@@ -2,6 +2,8 @@ package Step;
 
 import static org.testng.Assert.assertTrue;
 
+import com.cucumber.listener.Reporter;
+
 import Engine.TestEngine;
 import cucumber.api.java.en.Given;
 
@@ -18,9 +20,12 @@ public class Demo extends TestEngine {
 	           rev = rev + inputString.charAt(i);
 	   
 	        if (inputString.equals(rev))
+	        {
+	        	Reporter.addStepLog("Test case Passed");
 	           return true;
-	        else
-	           return false;
+	        }else {
+	        	Reporter.addStepLog("Test case Failed");
+	           return false;}
 	    }
 	}
 
