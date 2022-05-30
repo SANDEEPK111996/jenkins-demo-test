@@ -2,10 +2,14 @@ package Step;
 
 import static org.testng.Assert.assertTrue;
 
+import org.apache.poi.util.SystemOutLogger;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import com.cucumber.listener.Reporter;
 
 import Engine.TestEngine;
 import cucumber.api.java.en.Given;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Demo extends TestEngine {
 	
@@ -31,6 +35,16 @@ public class Demo extends TestEngine {
 
 	@Given("^Testing demo Testcase$")
 	public void user_is_on_login_page() throws Throwable {
-	    assertTrue(isPalindrome("madam1"));
+	    assertTrue(isPalindrome("madam"));
+	    
+	    System.out.println("HII");
+	    
+		WebDriverManager webDriverManager = WebDriverManager.chromedriver();
+
+		webDriverManager.setup();
+
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 	}
 }

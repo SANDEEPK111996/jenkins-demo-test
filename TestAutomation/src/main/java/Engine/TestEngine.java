@@ -10,16 +10,5 @@ public class TestEngine {
 
 	public static WebDriver driver;
 	
-	@BeforeSuite
-	public void setUp() {
 
-		WebDriverManager webDriverManager = WebDriverManager.chromedriver();
-
-		webDriverManager.setup();
-
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		
-	}
 }
